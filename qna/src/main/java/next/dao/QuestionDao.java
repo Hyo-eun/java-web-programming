@@ -82,9 +82,9 @@ public class QuestionDao {
 		PreparedStatement pstmt = null;
 		try {
 			con = ConnectionManager.getConnection();
-			String sql = "UPDATE quetions SET countOfComment=countOfComment+1 WHERE questionId=?";
+			String sql = "UPDATE questions SET countOfComment=countOfComment+1 WHERE questionId=?";
 			pstmt = con.prepareStatement(sql);
-			pstmt.setLong(5, questionId);
+			pstmt.setLong(1, questionId);
 		} finally {
 			if (pstmt != null) {
 				pstmt.close();
