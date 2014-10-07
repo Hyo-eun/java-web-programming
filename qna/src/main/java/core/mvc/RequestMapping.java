@@ -19,7 +19,7 @@ public class RequestMapping {
 		mappings.put("/list.next", new ListController());
 		mappings.put("/show.next", new ShowController());
 		mappings.put("/save.next", new SaveController());
-		mappings.put("${answers.createdDate}", new AnswerController());
+		mappings.put("/api/addanswer.next", new AnswerController());
 		mappings.put("/form.next", new ForwardController("form.jsp"));
 		
 		logger.info("Initialized Mapping Completed!");
