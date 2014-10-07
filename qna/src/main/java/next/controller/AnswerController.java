@@ -33,7 +33,7 @@ public class AnswerController implements Controller {
 		
 		logger.debug(writer);
 		
-		return "show.jsp";
+		return "api";
 	}
 
 }
